@@ -1,0 +1,12 @@
+{%extends 'shopping/base.html'%}
+
+{% load static  %}
+
+{% block content  %}
+
+{% for i in data%}
+{{i.item.title}}
+{{i.quantity}}
+{%endfor%}
+
+{% endblock content %}
